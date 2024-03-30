@@ -32,10 +32,9 @@
 * 서기 : 2기_권기준
 
 ## Exercise 각 주차별 목표
-
-1주차 (3.30 ~ 4.6) - variables, functions, if, primitive_types
-2주차 (4.6 ~ 4.13) - vecs, move_semantics, structs, enums
-3주차 (4.13 ~ 4.20) - strings, modules, hashmaps, options
-4주차 (4.20 ~ 4.27) - error_handling, generics, traits, lifetimes
-5주차 (4.27 ~ 5.4) - tests, iterators, smart_pointers, threads
-6주차 (5.4 ~ 5.11) - macros, clippy, conversions
+* 1주차 (3.30 ~ 4.6) - variables, functions, if, primitive_types
+* 2주차 (4.6 ~ 4.13) - vecs, move_semantics, structs, enums
+* 3주차 (4.13 ~ 4.20) - strings, modules, hashmaps, options
+* 4주차 (4.20 ~ 4.27) - error_handling, generics, traits, lifetimes
+* 5주차 (4.27 ~ 5.4) - tests, iterators, smart_pointers, threads
+* 6주차 (5.4 ~ 5.11) - macros, clippy, conversions

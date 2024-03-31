@@ -3,12 +3,12 @@
 
 <table width="100%" align="center">
   <tr>
-    <td align="center"><p>팀장</p><a href="https://github.com/raacker"><img src="https://github.com/sipe-team/2-1_rust/assets/60775453/e86de008-796e-45d0-a8ad-642c9693f92c" width="150px;" alt=""/><br /><p><b>김헌겸</b></p></a><small>🤖 로봇 개발자</small></td>
-    <td align="center"><p>장소섭외</p><a href="https://github.com/mike2ox"><img src="https://github.com/sipe-team/2-1_rust/assets/60775453/6fb08e56-bdbf-46b1-afb8-e7d2382bb911" width="150px;" alt=""/><br /><p><b>송문혁</b></p></a><small>🌐 Front-End Developer</small></td>
-    <td align="center"><p>총무</p><a href="https://github.com/saseungmin"><img src="https://github.com/sipe-team/2-1_rust/assets/60775453/0a7ed783-a43c-408b-80e7-bcffc6ddcbd3" width="150x;" alt=""/><br /><p><b>사승민</b></p></a><small>🌐 Front-End Developer</small></td>
-    <td align="center"><p>사진</p><a href="https://github.com/hy57in"><img src="https://github.com/sipe-team/2-1_rust/assets/60775453/ebb6ef7b-de1d-43ab-b7b1-8301f83f296e" width="150x;" alt=""/><br /><p><b>김효진</b></p></a><small>🐤 Front-End Developer</small></td>
-    <td align="center"><p>일정, 재촉, 격려</p><a href="https://github.com/UhyeongJo"><img src="https://github.com/sipe-team/2-1_rust/assets/60775453/a09f3eee-44b6-4c59-8183-a68e2e7a4897" width="150px;" alt=""/><br /><p><b>조우형</b></p></a><small>⚙️ DevOps Engineer</small></td>
-  <td align="center"><p>서기</p><a href="https://github.com/kkjsw17"><img src="https://github.com/sipe-team/2-1_rust/assets/60775453/b283b921-b85d-4152-862a-fd4691770092" width="150px;" alt=""/><br /><p><b>권기준</b></p></a><small>🧑🏻‍💻 Back-End Developer</small></td>
+    <td align="center"><b>팀장</b><a href="https://github.com/raacker"><img src="https://github.com/sipe-team/2-1_rust/assets/60775453/e86de008-796e-45d0-a8ad-642c9693f92c" width="150px;" alt=""/><br /><p><b>김헌겸</b></p></a><small>🤖 로봇 개발자</small></td>
+    <td align="center"><b>장소섭외</b><a href="https://github.com/mike2ox"><img src="https://github.com/sipe-team/2-1_rust/assets/60775453/6fb08e56-bdbf-46b1-afb8-e7d2382bb911" width="150px;" alt=""/><br /><p><b>송문혁</b></p></a><small>🌐 Front-End Developer</small></td>
+    <td align="center"><b>총무</b><a href="https://github.com/saseungmin"><img src="https://github.com/sipe-team/2-1_rust/assets/60775453/0a7ed783-a43c-408b-80e7-bcffc6ddcbd3" width="150x;" alt=""/><br /><p><b>사승민</b></p></a><small>🌐 Front-End Developer</small></td>
+    <td align="center"><b>사진</b><a href="https://github.com/hy57in"><img src="https://github.com/sipe-team/2-1_rust/assets/60775453/ebb6ef7b-de1d-43ab-b7b1-8301f83f296e" width="150x;" alt=""/><br /><p><b>김효진</b></p></a><small>🐤 Front-End Developer</small></td>
+    <td align="center"><b>일정, 재촉, 격려</b><a href="https://github.com/UhyeongJo"><img src="https://github.com/sipe-team/2-1_rust/assets/60775453/a09f3eee-44b6-4c59-8183-a68e2e7a4897" width="150px;" alt=""/><br /><p><b>조우형</b></p></a><small>⚙️ DevOps Engineer</small></td>
+  <td align="center"><b>서기</b><a href="https://github.com/kkjsw17"><img src="https://github.com/sipe-team/2-1_rust/assets/60775453/b283b921-b85d-4152-862a-fd4691770092" width="150px;" alt=""/><br /><p><b>권기준</b></p></a><small>🧑🏻‍💻 Back-End Developer</small></td>
   </tr>
 </table>
 

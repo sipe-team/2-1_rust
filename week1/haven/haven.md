@@ -22,6 +22,40 @@ C++의 경우 size_t를 많이 쓰는 편인데 요즘 시스템에서는 대부
 
 그리고 default 값이 **i32, f64**라는 점도 유의하자. Floating point 연산을 많이 해야하는 vector 연산등의 경우에는 4x4 Transformation Matrix는 8 * 16 = 108 byte라는 큰 크기를 가지게 되며, 3차원 vector 또한 8 * 3 = 24 byte나 된다. 물론 정밀도를 위해서 matrix는 4x4 double을 보통 사용하지만 vector의 경우 메모리 용량을 굳이 그정도의 자세한 정밀도를 위해 trade-off 할 필요가 없는 경우가 제법 많으니까.
 
+## Tuple과 Array 문법
+
+문법이 꽤 편하고 좋다고 생각했다. subarray indexing도 파이썬처럼 range 베이스 문법도 지원해주는 건 편하다.
+
+* Array
+
+```rust
+let arr1 : [i32; 5] = [1, 2, 3, 4 ,5]; // 5 elements in fixed size array
+let arr2 : [i32; 5] // Compile error; uninitialized
+let arr3 = [3; 10]; // 10 elements filled with 3
+
+let subarr1 = arr1[0..2] // [1, 2]
+```
+
+* Tuple
+
+```rust
+let tuple1 : (i32, i32) = (100, 200);
+let x = tuple1.0;
+let y = tuple1.1;
+```
+
+좀 더 직관적이고 짧은 코드 같기도...
+
+C++에서는 코드가 약간 좀 더 길다.
+
+```c++
+std::tuple<int32_t, int32_t> tuple1 = std::make_tuple<>(100, 200);
+int32_t x, y;
+std::tie(x, y) = tuple1;
+
+const auto& [x, y] = tuple1; // Since c++ 17
+```
+
 ## 타입의 강제성
 
 Rust는 언어의 설계 목적인 안정성을 지키기 위해 가변젹인 타입등은 전혀 지원하지 않고 유교보이 급의 보수적인 타입 제한을 자랑한다.

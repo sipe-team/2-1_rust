@@ -29,6 +29,8 @@
 * (추후) 러스트 오픈소스 기여
 * (추후) 러스트 프로그래밍 책 스터디
 
+* 참고: 문제를 풀면서 hint가 필요하거나 공부가 더 필요할 때는 공식 가이드북이자 책으로도 출판된 [The Rust Programming Language](https://doc.rust-kr.org)를 참고하면 됩니다.
+
 ## 스터디 방식
 * 매주 rustlings의 exercise를 약 4챕터씩 풀고 스크린샷을 repository에 커밋하여 인증합니다. (총 26개)
 * 매주 자유 형식으로 공부한 내용, 공부하면서 느낀 점 등 자유롭게 정리하여 repository에 커밋합니다.

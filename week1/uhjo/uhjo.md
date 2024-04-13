@@ -1,5 +1,5 @@
 ## Week 1 Result
-![result.png](./images/week1_result.png)
+![result.png](images/week1_result.png)
 
 ## What I felt
 
@@ -9,10 +9,10 @@
 
 ## What I interested
 * 컴파일 과정에서 에러 뱉는 것이 친절하다.
-  ![result.png](./images/test_result.png)
+  ![result.png](images/test_result.png)
 * 짧게나마 보았지만 test 코드 결과 값이 신기하게 나왔다.
 * panic 이 부분도 신기하게 느껴짐
-  ![result.png](./images/panic_result.png)
+  ![result.png](images/panic_result.png)
 
 ## What I learned
 

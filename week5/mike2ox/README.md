@@ -31,11 +31,11 @@ fn main() {
 - `into()`
   - `From` 트레이트를 구현하고 있어서 원하는 타입의 `from()`을 사용할 수 있다.
 
-=> Rust 커뮤니티에서는 `to_owned` 사용을 권장한다.
+=> Rust 커뮤니티에서는 `to_owned()` 사용을 권장한다.
 
-- 안정성을 위해 `to_owned` 권장
-- `to_string`이 Display를 구현한 모든 타입에 사용할 수 있기에 str이 아닌 타입이 의도치 않게 String으로 변환될 수 있다.
-- 의미상 &str와 String은 모두 문자열을 의미하기에 단순 `to_string`보다는 소유권 이전을 명시적으로 표현하는 `to_owned`를 사용하는 것이 적합
+- 안정성을 위해 `to_owned()` 권장 (ex. &&str (?))
+- `to_string()`이 Display를 구현한 모든 타입에 사용할 수 있기에 str이 아닌 타입이 의도치 않게 String으로 변환될 수 있다.
+- 의미상 &str와 String은 모두 문자열을 의미하기에 단순 `to_string()`보다는 소유권 이전을 명시적으로 표현하는 `to_owned()`를 사용하는 것이 적합
 
 ### 문자열 결합
 
@@ -60,6 +60,39 @@ fn main() {
 
     // format! 안에 원하는 문자열 형태를 넣어주면 됨
     let s = format!("{}-{}-{}", s1, s2, s3);
+}
+```
+
+### 인덱싱
+
+- Rust에서는 문자열을 인덱싱하여 접근할 수 없다.
+- 이유는 Rust의 문자열은 UTF-8로 인코딩되어 있기 때문에 인덱싱을 하게 되면 O(1) 시간복잡도로 접근할 수 없다.
+  - 언어별로 차지하고 있는 바이트 수가 다르기 때문
+- 따라서, 문자열을 인덱싱하여 접근하려면 `chars()` 메서드를 사용해야 한다.
+
+```rust
+fn main() {
+    let s = String::from("안녕하세요");
+    for c in s.chars() {
+        println!("{}", c);
+    }
+}
+```
+
+### 문자열 슬라이싱
+
+- Rust에서 문자열 슬라이싱은 `&str` 타입을 반환한다.
+- 문자열 슬라이싱은 `&str` 타입을 반환하기 때문에 `&str` 타입을 `String` 타입으로 변환하려면 `to_string()` 메서드를 사용해야 한다.
+
+```rust
+fn main() {
+    let s = String::from("안녕하세요");
+    let slice = &s[0..3]; // "안녕"
+    let slice = &s[0..=2]; // "안녕"
+    let slice = &s[..3]; // "안녕"
+    let slice = &s[3..]; // "하세요"
+    let slice = &s[3..=5]; // "하세요"
+    let slice = &s[3..]; // "하세요"
 }
 ```
 

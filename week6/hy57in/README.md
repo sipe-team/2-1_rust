@@ -2,7 +2,7 @@
 
 ### [Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
 
-![palindrome-number](./images/palindrome_number.png)
+![palindrome_number](./images/palindrome_number.png)
 
 - rust
 
@@ -50,10 +50,29 @@ impl Solution {
 
 ### [Valid Parentheses](https://leetcode.com/problems/valid-parentheses)
 
+![valid_parentheses](./images/valid_parentheses.png)
+
 - rust
 
 ```rust
-// TODO
+impl Solution {
+    pub fn is_valid(s: String) -> bool {
+        let mut brackets = Vec::new();
+
+        for bracket in s.chars() {
+            match bracket {
+                '{' => brackets.push('}'),
+                '(' => brackets.push(')'),
+                '[' => brackets.push(']'),
+
+                closing => if Some(closing) != brackets.pop() {
+                    return false
+                }
+            }
+        }
+        brackets.is_empty()
+    }
+}
 ```
 
 - javascript
